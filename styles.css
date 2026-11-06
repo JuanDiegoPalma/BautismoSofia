@@ -133,13 +133,17 @@ body {
 }
 
 .eyebrow {
-  margin: 0 0 9px;
-  color: #8a8175;
-  font-size: 0.58rem;
+  width: fit-content;
+  max-width: 290px;
+  margin: 0 auto 12px;
+  padding: 0 8px 7px;
+  border-bottom: 1px solid #d8c6b1;
+  color: #806b56;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(0.82rem, 3.8vw, 1rem);
+  font-style: italic;
   font-weight: 500;
-  letter-spacing: 0.16em;
-  line-height: 1.45;
-  text-transform: uppercase;
+  line-height: 1.35;
 }
 
 .ornament {
@@ -160,7 +164,7 @@ h1 {
 
 h1 em {
   color: #9c8068;
-  font-size: 0.78em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -192,9 +196,9 @@ h1 em {
 }
 
 .countdown h2 {
-  margin: 0 0 7px;
+  margin: 0 0 5px;
   color: #9c8068;
-  font-size: 0.6rem;
+  font-size: 0.56rem;
   font-weight: 600;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -203,24 +207,24 @@ h1 em {
 .countdown-units {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 5px;
+  gap: 3px;
 }
 
 .countdown-units div {
   display: grid;
-  gap: 3px;
+  gap: 1px;
 }
 
 .countdown-units span {
   color: #554c43;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.2rem, 4.5vw, 1.55rem);
+  font-size: clamp(1rem, 4vw, 1.3rem);
   font-variant-numeric: tabular-nums;
 }
 
 .countdown-units small {
   color: #8a8175;
-  font-size: 0.54rem;
+  font-size: 0.5rem;
   letter-spacing: 0.04em;
 }
 
