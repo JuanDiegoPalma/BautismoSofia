@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Una invitación especial para celebrar el bautismo de Sofi."
+    />
+    <title>Bautismo de Sofi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="invitation-page">
+      <section class="scroll-scene" aria-label="Invitación de bautismo">
+        <div class="backdrop backdrop--one" aria-hidden="true"></div>
+        <div class="backdrop backdrop--two" aria-hidden="true"></div>
+        <div class="scene" id="invitation-scene">
+          <article class="invitation-card" aria-labelledby="invitation-title">
+            <div class="card-content">
+              <p class="eyebrow">Con mucha alegría te invitamos a celebrar</p>
+              <span class="ornament" aria-hidden="true">✳</span>
+              <h1 id="invitation-title">El bautismo <em>de</em> Sofi</h1>
+              <p class="intro">
+                Señor, que mi vida sea una llama, una pequeña luz que brille allí donde yo vaya.
+              </p>
+
+              <div class="divider" aria-hidden="true">
+                <span></span>
+                <span class="divider-flower">✿</span>
+                <span></span>
+              </div>
+
+              <section class="countdown" aria-labelledby="countdown-title">
+                <h2 id="countdown-title">Falta para el gran día</h2>
+                <div
+                  class="countdown-units"
+                  id="countdown"
+                  role="timer"
+                  aria-label="Cuenta regresiva para el bautismo"
+                  data-date="2026-12-05T12:00:00-03:00"
+                >
+                  <div><span data-unit="days">--</span><small>días</small></div>
+                  <div><span data-unit="hours">--</span><small>horas</small></div>
+                  <div><span data-unit="minutes">--</span><small>minutos</small></div>
+                  <div><span data-unit="seconds">--</span><small>segundos</small></div>
+                </div>
+              </section>
+
+              <div class="divider divider--details" aria-hidden="true">
+                <span></span>
+                <span class="divider-flower">✿</span>
+                <span></span>
+              </div>
+
+              <dl class="event-details">
+                <div>
+                  <dt>Día y hora</dt>
+                  <dd>Sábado, 5 de diciembre · 12:00</dd>
+                </div>
+                <div>
+                  <dt>Dónde</dt>
+                  <dd>Iglesia Catedral de San Juan Bautista, calle Mendoza 204 Sur</dd>
+                </div>
+              </dl>
+
+              <p class="closing">¡Te esperamos!</p>
+              <p class="signature">Con cariño, la familia de Sofi</p>
+            </div>
+          </article>
+
+          <div class="envelope" aria-hidden="true">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+            <div class="envelope-seal">S</div>
+          </div>
+
+          <p class="scroll-hint" id="scroll-hint">
+            Desliza para abrir la invitación <span aria-hidden="true">↓</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
